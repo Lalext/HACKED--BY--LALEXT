@@ -1,0 +1,289 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f1f4f9, #283624);
+  background-size: cover;
+  background-position: center;
+}
+section .color {
+  position: absolute;
+  filter: blur(150px);
+}
+section .color:nth-child(1) {
+  top: -350px;
+  background: #5c55e6;
+  width: 600px;
+  height: 600px;
+}
+section .color:nth-child(2) {
+  bottom: -150px;
+  left: 100px;
+  background: #4b1c8b;
+  width: 500px;
+  height: 500px;
+}
+section .color:nth-child(3) {
+  bottom: 50px;
+  right: 0;
+  background: #001f6a;
+  width: 300px;
+  height: 300px;
+}
+section .box {
+  position: relative;
+}
+section .box .cuadrado {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  background: rgba(255, 8, 229, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: rgba(34, 228, 8, 0.1);
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+  -webkit-animation-delay: calc(-1s * var(--i));
+          animation-delay: calc(-1s * var(--i));
+}
+section .box .cuadrado:nth-child(1) {
+  top: -50px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+}
+section .box .cuadrado:nth-child(2) {
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+section .box .cuadrado:nth-child(3) {
+  bottom: 50px;
+  right: -60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+section .box .cuadrado:nth-child(4) {
+  bottom: -80px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+section .box .cuadrado:nth-child(5) {
+  top: -80px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+}
+section .box .cuadrado:nth-child(6) {
+  top: -120px;
+  left: 180px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+}
+section .box .cuadrado:nth-child(7) {
+  bottom: -100px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+}
+section .box .cuadrado:nth-child(8) {
+  top: -80px;
+  right: -120px;
+  width: 100px;
+  height: 100px;
+}
+section .box .cuadrado:nth-child(9) {
+  top: 140px;
+  left: -110px;
+  width: 120px;
+  height: 120px;
+}
+section .box .cuadrado:nth-child(10) {
+  top: 300px;
+  left: 440px;
+  width: 60px;
+  height: 60px;
+}
+section .box .container {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: rgba(119, 245, 125, 0.1);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(28, 192, 28, 0.5);
+  border-right: 1px solid rgba(28, 192, 28, 0.5);
+  border-bottom: 1px solid rgba(28, 192, 28, 0.5);
+  box-shadow: 0 25px 45px rgba(28, 156, 47, 0.185);
+}
+section .box .container .form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+section .box .container .form h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+section .box .container .form h1 span {
+  transition: 0.5s;
+}
+section .box .container .form h1:hover span {
+  color: rgb(196, 201, 193);
+  text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px rgb(230, 69, 69), 0 0 40px rgb(43, 236, 53), 0 0 80px rgb(51, 228, 60), 0 0 120px rgb(255, 0, 0), 0 0 160px rgb(102, 255, 0);
+}
+section .box .container .form h1:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+section .box .container .form h1:hover span:nth-child(1)::after {
+  content: "";
+}
+section .box .container .form h1:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+section .box .container .form .inputbox {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+section .box .container .form .inputbox input {
+  position: relative;
+  bottom: -20px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(17, 255, 57, 0.5);
+  border-left: 1px solid rgba(17, 255, 57, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgba(0, 255, 21, 0.664);
+  font-weight: 600;
+}
+section .box .container .form .inputbox input::-moz-placeholder {
+  color: rgb(48, 75, 50);
+}
+section .box .container .form .inputbox input:-ms-input-placeholder {
+  color: rgb(48, 75, 50);
+}
+section .box .container .form .inputbox input::placeholder {
+  color: rgb(48, 75, 50);
+}
+section .box .container .form .inputbox input[type=submit] {
+  background: rgba(255, 255, 255, 0.473);
+  color: #283624;
+  border: none;
+  font-weight: 600;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+section .box .container .form .olvidar {
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  margin-top: 5px;
+  color: #fff;
+  padding: 2px;
+}
+section .box .container .form .olvidar a {
+  color: rgb(0, 255, 34);
+}
+section .box .container .form .olvidar span {
+  transition: 0.5s;
+}
+section .box .container .form .olvidar:hover span {
+  color: rgb(51, 255, 0);
+  text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px rgb(230, 69, 69), 0 0 40px rgb(43, 236, 53), 0 0 80px rgb(51, 228, 60), 0 0 120px rgb(255, 0, 0), 0 0 160px rgb(102, 255, 0);
+}
+section .box .container .form .olvidar:hover span:nth-child(1) {
+  margin-right: 1px;
+}
+section .box .container .form .olvidar:hover span:nth-child(1)::after {
+  content: "";
+}
+section .box .container .form .olvidar:hover span:nth-child(2) {
+  margin-left: 1px;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    transform: translateY(-40px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(-40px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}/*# sourceMappingURL=style.css.map */
